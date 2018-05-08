@@ -1,0 +1,19 @@
+爬之前，阅读网站的robots.txt文件最好
+    Crawl-delay:5延迟5s
+    builtwith：查看网站所用技术
+        拉勾网返回结果
+            {u'programming-languages': [u'Java']}
+    python-whois:查看网站所有者
+3种爬取网站方式
+    爬取网站地图
+    遍历每个网页的数据库ID;
+    跟踪网页链
+
+    不管哪种爬虫都要加上一个头
+        User-Agent
+            Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+    拉勾
+        首先要找到ajax返回的数据
+        然后拉勾会返回假的数据给你（反爬虫机制）
+        添加Form Data数据体
